@@ -1,14 +1,24 @@
+import axios from 'axios';
 import React from 'react';
+
+const URL = process.env.REACT_APP_URL || "http://localhost:3001";
 
 class BestBooks extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      books: []
+      books: [],
     }
   }
 
-  /* TODO: Make a GET request to your API to fetch all the books from the database  */
+  componentDidMount(){
+   const getBooks = async() => {
+    const bookData = await axios.get(`${URL}/books`);
+   console.log(bookData);
+   this.setState({books: bookData.data});
+   }
+   getBooks();
+  }
 
   render() {
 
