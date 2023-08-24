@@ -35,7 +35,7 @@ class BestBooks extends React.Component {
         {this.state.books.length ? (
          <Books books={this.state.books} />
         ) : (
-          <h3>No Books Found :</h3>
+          <h3>Book Collection Empty</h3>
         )}
       </>
     );
