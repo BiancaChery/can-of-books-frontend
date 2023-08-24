@@ -21,7 +21,7 @@ class Profile extends Component {
     return (
       <div>
         <h1>Developers</h1>
-        {delevopers.map((developer, index) => (
+        {developers.map((developer, index) => (
           <div key={index}>
             <h2>{developer.name}</h2>
             <p>Profile page coming soon</p>
