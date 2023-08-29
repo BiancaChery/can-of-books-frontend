@@ -2,7 +2,6 @@ import { Component } from "react";
 
 class Profile extends Component {
   render() {
-    /* TODO: render information about the developers */
     const developers = [
       {
         name: "Gerard Johnson",
@@ -16,7 +15,7 @@ class Profile extends Component {
         name: "Justine Oyaghiro",
         github: "https://github.com/joyagh",
       },
-      //Add more developers here
+      
     ];
     return (
       <div>
@@ -24,7 +23,6 @@ class Profile extends Component {
         {developers.map((developer, index) => (
           <div key={index}>
             <h2>{developer.name}</h2>
-            <p>Profile page coming soon</p>
             <a
               href={developer.github}
               target="_blank"

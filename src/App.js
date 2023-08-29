@@ -7,6 +7,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import About from "./About";
 
+// const SERVER = process.env.REACT_APP_SERVER_URL;
+
 class App extends React.Component {
   render() {
     return (
